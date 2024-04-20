@@ -7,6 +7,7 @@ import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import logoUrl from './logo.svg'
 import type { OnRenderHtmlAsync } from 'vike/types'
 import { getPageTitle } from './getPageTitle'
+import { config } from '../pages/config'
 
 const onRenderHtml: OnRenderHtmlAsync = async (pageContext): ReturnType<OnRenderHtmlAsync> => {
   const { Page } = pageContext
@@ -24,7 +25,7 @@ const onRenderHtml: OnRenderHtmlAsync = async (pageContext): ReturnType<OnRender
 
   // See https://vike.dev/head
   const title = getPageTitle(pageContext)
-  const desc = pageContext.data?.description || pageContext.config.description || 'Demo of using Vike'
+  const desc = pageContext.data?.description || pageContext.config.description || config.app.description
 
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
