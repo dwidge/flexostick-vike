@@ -1,5 +1,6 @@
 const app = {
   title: import.meta.env.PUBLIC_ENV__TITLE,
+  description: import.meta.env.PUBLIC_ENV__DESCRIPTION,
   email: import.meta.env.PUBLIC_ENV__EMAIL,
   phone: import.meta.env.PUBLIC_ENV__PHONE,
   currency: import.meta.env.PUBLIC_ENV__CURRENCY,
