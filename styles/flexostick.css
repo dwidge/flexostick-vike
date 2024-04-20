@@ -1,0 +1,20 @@
+body {
+  background: hsl(129, 79%, 20%);
+}
+.bg1 {
+  background-image: url("../images/bg1.jpg");
+}
+.bg2 {
+  background-image: url("../images/bg2.jpg");
+}
+.bg3 {
+  background-image: url("../images/bg3.jpg");
+}
+.bg4 {
+  background-image: url("../images/bg4.jpg");
+}
+.button,
+button {
+  color: white;
+  background: #108822;
+}
