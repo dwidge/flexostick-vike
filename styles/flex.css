@@ -1,0 +1,16 @@
+html,
+body,
+#root,
+#react-root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+* {
+  box-sizing: border-box;
+}
