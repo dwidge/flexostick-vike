@@ -1,5 +1,5 @@
 body {
-  background: hsl(129, 79%, 20%);
+  background: hsl(176, 71%, 18%);
 }
 .bg1 {
   background-image: url("../images/bg1.jpg");
@@ -16,5 +16,5 @@ body {
 .button,
 button {
   color: white;
-  background: #108822;
+  background: #1ca69d;
 }
