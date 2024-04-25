@@ -1,0 +1,22 @@
+.doublecolumn {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .doublecolumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-auto-flow: row dense;
+  }
+}
+
+.doublecolumn > :nth-child(4n - 1) {
+  grid-column-start: 2;
+}
+
+.doublecolumn .bgimage {
+  min-height: 5em;
+  height: 100%;
+}
