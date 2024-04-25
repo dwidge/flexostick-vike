@@ -2,11 +2,8 @@ import React from "react";
 
 export const Home: React.FC<{}> = ({}) => {
   return (
-    <div
-      className="flex semidark bgimage2"
-      style={{ display: "grid", gridTemplateColumns: "auto auto" }}
-    >
-      <section className="flex padx center text-center">
+    <div className="flex semidark bgimage2 doublecolumn">
+      <section className="flex padx center text-center doublecolumn1">
         <h3>WHO WE ARE</h3>
         <p>
           Established in 2000, our team has been in the printing industry for 20
@@ -15,8 +12,7 @@ export const Home: React.FC<{}> = ({}) => {
         </p>
       </section>
       <section className="bgimage bg1"></section>
-      <section className="bgimage bg2"></section>
-      <section className="padx center text-center">
+      <section className="padx center text-center doublecolumn1">
         <h3>WHAT WE DO</h3>
         <p>
           We are Manufacturers of a wide range of self-adhesive labels
@@ -25,7 +21,8 @@ export const Home: React.FC<{}> = ({}) => {
           colour labels.
         </p>
       </section>
-      <section className="padx center text-center">
+      <section className="bgimage bg2"></section>
+      <section className="padx center text-center doublecolumn1">
         <h3>OTHER PRODUCTS WE OFFER</h3>
         <ul>
           <li>Digitally printed labels</li>
@@ -46,8 +43,7 @@ export const Home: React.FC<{}> = ({}) => {
         </ul>
       </section>
       <section className="bgimage bg3"></section>
-      <section className="bgimage bg4"></section>
-      <section className="padx center text-center">
+      <section className="padx center text-center doublecolumn1">
         <h3>WE OPERATE</h3>
         <ul>
           <li>Monday - Friday</li>
@@ -62,6 +58,7 @@ export const Home: React.FC<{}> = ({}) => {
           <li>011 892 3224</li>
         </ul>
       </section>
+      <section className="bgimage bg4"></section>
     </div>
   );
 };
