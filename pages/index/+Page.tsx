@@ -25,6 +25,9 @@ export function Page() {
               What We Do
             </Link>
             <Link className="button" href="/">
+              Gallery
+            </Link>
+            <Link className="button" href="/">
               Request a Quote
             </Link>
           </nav>
