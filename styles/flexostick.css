@@ -2,16 +2,16 @@ body {
   background: hsl(176, 71%, 18%);
 }
 .bg1 {
-  background-image: url("../images/bg1.jpg");
+  background-image: url("../images/gallery/IMG-20240423-WA0013.jpg");
 }
 .bg2 {
-  background-image: url("../images/bg2.jpg");
+  background-image: url("../images/gallery/IMG-20240423-WA0025.jpg");
 }
 .bg3 {
-  background-image: url("../images/bg3.jpg");
+  background-image: url("../images/gallery/IMG-20240423-WA0031.jpg");
 }
 .bg4 {
-  background-image: url("../images/bg4.jpg");
+  background-image: url("../images/gallery/IMG-20240423-WA0033.jpg");
 }
 .button,
 button {
