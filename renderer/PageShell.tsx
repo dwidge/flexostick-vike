@@ -10,6 +10,7 @@ import "./PageShell.css";
 import "../styles/reset.css";
 import "../styles/flex.css";
 import "../styles/basic.css";
+import "../styles/doublecolumn.css";
 
 function PageShell({
   children,

@@ -137,6 +137,9 @@ a {
   flex: 0;
   position: relative;
 }
+.auto {
+  flex: auto;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
@@ -149,6 +152,10 @@ a {
 .center {
   align-items: center;
   justify-content: center;
+}
+.left {
+  align-items: center;
+  justify-content: left;
 }
 .right {
   align-items: flex-end;
@@ -182,7 +189,7 @@ a {
 }
 .wide {
   width: 100%;
-  min-width: 500px;
+  min-width: 200px;
   max-width: 800px;
   margin: auto;
 }
@@ -194,7 +201,7 @@ button {
   color: white;
   background: grey;
   border-style: none;
-  border-radius: 1em;
+  border-radius: 0.3em;
   padding: 1em;
   text-transform: uppercase;
   text-decoration: none;
@@ -237,7 +244,6 @@ figure {
   background-blend-mode: overlay;
 }
 .red {
-  flex: auto;
   background-color: red;
 }
 
