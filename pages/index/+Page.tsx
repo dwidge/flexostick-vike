@@ -2,6 +2,7 @@ import { config } from "../config.js";
 import { Link } from "../../renderer/Link.js";
 import banner from "../../images/banner.png";
 import { Home } from "./Home.js";
+import { ContactIcons } from "./ContactIcons.js";
 
 export function Page() {
   return (
@@ -13,6 +14,7 @@ export function Page() {
           justifyContent: "space-between",
         }}
       >
+        <ContactIcons />
         <section className="navigation">
           <nav
             role="navigation"
@@ -32,6 +34,7 @@ export function Page() {
         <Home />
       </div>
       <section className="auto row semidark pad gap left">
+        <ContactIcons />
         <p>
           We are a Level 4 BEE contributor and Essential Supplier. © 2023{" "}
           {config.app.title}
