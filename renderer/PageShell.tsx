@@ -8,7 +8,7 @@ import "./css/index.css";
 import "./PageShell.css";
 
 import { config } from "../pages/config";
-import banner from "../../images/banner.png";
+import banner from "../images/banner.png";
 import { ContactIcons } from "../components/ContactIcons";
 import "../styles/reset.css";
 import "../styles/flex.css";
