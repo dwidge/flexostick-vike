@@ -1,6 +1,6 @@
-import { EmailIcon } from "../../components/EmailIcon";
-import { PhoneIcon } from "../../components/PhoneIcon";
-import { WhatsappIcon } from "../../components/WhatsappIcon";
+import { EmailIcon } from "./EmailIcon";
+import { PhoneIcon } from "./PhoneIcon";
+import { WhatsappIcon } from "./WhatsappIcon";
 
 export const ContactIcons = () => (
   <section className="auto row gap left wrap">
