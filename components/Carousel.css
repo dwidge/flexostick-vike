@@ -1,0 +1,73 @@
+/*
+Copyright DWJ 2024.
+Distributed under the Boost Software License, Version 1.0.
+https://www.boost.org/LICENSE_1_0.txt
+*/
+
+.carousel .images {
+  display: flex;
+  flex: auto;
+  align-items: stretch;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  max-height: 100vh;
+}
+
+.carousel .item {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.carousel .image {
+  display: block;
+}
+
+.carousel .controls {
+  position: absolute;
+  right: 0;
+  bottom: 1em;
+  left: 0;
+  text-align: center;
+}
+
+.carousel .controls .control {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  outline: none;
+  background-color: #fff;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:not(:first-child) {
+    margin-left: 0.25em;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.carousel .controls .active {
+  opacity: 1;
+}
+
+.relative {
+  position: relative;
+}
+
+.noscrollbar {
+  -ms-overflow-style: none;
+}
+
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+}
