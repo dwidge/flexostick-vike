@@ -19,6 +19,7 @@
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "@vitejs/plugin-react": "^4.2.1",
+    "change-case": "^5.4.4",
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
     "eslint": "^8.55.0",
@@ -32,11 +33,15 @@
     "sirv": "^2.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.3",
+    "uniforms-bridge-zod": "4.0.0-alpha.5",
+    "uniforms-unstyled": "4.0.0-alpha.5",
     "vike": "^0.4.168",
-    "vite": "^5.0.10"
+    "vite": "^5.0.10",
+    "zod": "^3.23.5"
   },
   "type": "module",
   "devDependencies": {
-    "serve": "^14.2.1"
+    "serve": "^14.2.1",
+    "vite-plugin-cjs-interop": "^2.1.0"
   }
 }

@@ -14,6 +14,7 @@ import "../styles/reset.css";
 import "../styles/flex.css";
 import "../styles/basic.css";
 import "../styles/doublecolumn.css";
+import "../styles/form.css";
 import "../styles/flexostick.css";
 
 function PageShell({
@@ -24,45 +25,45 @@ function PageShell({
   pageContext: PageContext;
 }) {
   return (
-    <React.StrictMode>
-      <PageContextProvider pageContext={pageContext}>
-        <div className="flex column wide shadow">
-          <img src={banner} />
-          <section
-            className="flex0 row spaced wrap semidark pad gap"
-            style={{
-              justifyContent: "space-between",
-            }}
-          >
-            <ContactIcons />
-            <section className="navigation">
-              <nav
-                role="navigation"
-                className="row gap wrap"
-                style={{ justifyContent: "flex-end" }}
-              >
-                <Link className="button" href="/">
-                  What We Do
-                </Link>
-                <Link className="button" href="/gallery">
-                  Gallery
-                </Link>
-                <Link className="button" href="/quote">
-                  Request a Quote
-                </Link>
-              </nav>
-            </section>
+    // <React.StrictMode>
+    <PageContextProvider pageContext={pageContext}>
+      <div className="flex column wide shadow">
+        <img src={banner} />
+        <section
+          className="flex0 row spaced wrap semidark pad gap"
+          style={{
+            justifyContent: "space-between",
+          }}
+        >
+          <ContactIcons />
+          <section className="navigation">
+            <nav
+              role="navigation"
+              className="row gap wrap"
+              style={{ justifyContent: "flex-end" }}
+            >
+              <Link className="button" href="/">
+                What We Do
+              </Link>
+              <Link className="button" href="/gallery">
+                Gallery
+              </Link>
+              <Link className="button" href="/quote">
+                Request a Quote
+              </Link>
+            </nav>
           </section>
-          <div className="flex dark">{children}</div>
-          <section className="flex0 row semidark pad gap left">
-            <ContactIcons />
-            <p>
-              We are a Level 4 BEE contributor and Essential Supplier. © 2023{" "}
-              {config.app.title}
-            </p>
-          </section>
-        </div>
-      </PageContextProvider>
-    </React.StrictMode>
+        </section>
+        <div className="flex dark">{children}</div>
+        <section className="flex0 row semidark pad gap left">
+          <ContactIcons />
+          <p>
+            We are a Level 4 BEE contributor and Essential Supplier. © 2023{" "}
+            {config.app.title}
+          </p>
+        </section>
+      </div>
+    </PageContextProvider>
+    // </React.StrictMode>
   );
 }
