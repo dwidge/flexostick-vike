@@ -1,7 +1,6 @@
 export { PageShell };
 
 import React from "react";
-import logoUrl from "./logo.svg";
 import { PageContextProvider } from "./usePageContext";
 import { Link } from "./Link";
 import type { PageContext } from "vike/types";
@@ -11,6 +10,8 @@ import "../styles/reset.css";
 import "../styles/flex.css";
 import "../styles/basic.css";
 import "../styles/doublecolumn.css";
+import "../styles/form.css";
+import { config } from "../pages/config";
 
 function PageShell({
   children,
@@ -20,84 +21,39 @@ function PageShell({
   pageContext: PageContext;
 }) {
   return (
-    <React.StrictMode>
-      <PageContextProvider pageContext={pageContext}>
-        {children}
-
-        {/* <Layout>
-          <Sidebar>
-            <Logo />
-            <Link href="/">Welcome</Link>
-            <Link href="/about">About</Link>
-            <Link href="/star-wars">Data Fetching</Link>
-          </Sidebar>
-          <Content>{children}</Content>
-        </Layout> */}
-      </PageContextProvider>
-    </React.StrictMode>
-  );
-}
-
-function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      style={{
-        display: "flex",
-        maxWidth: 900,
-        margin: "auto",
-      }}
-    >
-      {children}
-    </div>
-  );
-}
-
-function Sidebar({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      id="sidebar"
-      style={{
-        padding: 20,
-        flexShrink: 0,
-        display: "flex",
-        flexDirection: "column",
-        lineHeight: "1.8em",
-        borderRight: "2px solid #eee",
-      }}
-    >
-      {children}
-    </div>
-  );
-}
-
-function Content({ children }: { children: React.ReactNode }) {
-  return (
-    <div id="page-container">
-      <div
-        id="page-content"
-        style={{
-          padding: 20,
-          paddingBottom: 50,
-          minHeight: "100vh",
-        }}
-      >
-        {children}
+    // <React.StrictMode>
+    <PageContextProvider pageContext={pageContext}>
+      <div className="flex column wide shadow">
+        <section
+          className="flex0 row spaced wrap semidark pad gap"
+          style={{
+            justifyContent: "space-between",
+          }}
+        >
+          <section className="navigation">
+            <nav
+              role="navigation"
+              className="row gap wrap"
+              style={{ justifyContent: "flex-end" }}
+            >
+              <Link className="button" href="/">
+                What We Do
+              </Link>
+              <Link className="button" href="/gallery">
+                Gallery
+              </Link>
+              <Link className="button" href="/quote">
+                Request a Quote
+              </Link>
+            </nav>
+          </section>
+        </section>
+        <div className="flex dark">{children}</div>
+        <section className="flex0 row semidark pad gap left">
+          <p>© 2023 {config.app.title}</p>
+        </section>
       </div>
-    </div>
-  );
-}
-
-function Logo() {
-  return (
-    <div
-      style={{
-        marginTop: 20,
-        marginBottom: 10,
-      }}
-    >
-      <a href="/">
-        <img src={logoUrl} height={64} width={64} alt="logo" />
-      </a>
-    </div>
+    </PageContextProvider>
+    // </React.StrictMode>
   );
 }
