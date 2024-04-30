@@ -18,3 +18,9 @@ button {
   color: white;
   background: #1ca69d;
 }
+input {
+  border: solid 1px #1ca69d;
+}
+input[type="submit"] {
+  background-color: #1ca69d;
+}
