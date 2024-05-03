@@ -43,13 +43,13 @@ function PageShell({
               style={{ justifyContent: "flex-end" }}
             >
               <Link className="button" href="/">
-                What We Do
+                Home
               </Link>
               <Link className="button" href="/gallery">
                 Gallery
               </Link>
               <Link className="button" href="/quote">
-                Request a Quote
+                Quote
               </Link>
             </nav>
           </section>
